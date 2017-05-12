@@ -29,7 +29,7 @@ function functionLoaderCheck(){
     if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
         clearInterval(setIntervelVariable);
         zohoDeskLoadTimeing=0;
-        loadPage('https://localcss.zohostatic.com/support/zde_v1/css','https://localjs.zohostatic.com/support/zde_v1');
+        loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
     }
 }
 
