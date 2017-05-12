@@ -13,14 +13,16 @@ function valueGeter() {
 }
 
 function loadPage(cssPath,jsPath) {
-    ZohoDeskEditor_Init.init(cssPath,jsPath);
-    ZohoDeskEditor.create({
-        id: "editerToolsContainer",
-        content: chrome_addons_inner_text,
-        callback: callback,
-        contentChanged: valueGeter
-    });
-    eventBinder();
+    if(document.getElementById("editerToolsContainer").childElementCount ===0){
+        ZohoDeskEditor_Init.init(cssPath,jsPath);
+        ZohoDeskEditor.create({
+            id: "editerToolsContainer",
+            content: chrome_addons_inner_text,
+            callback: callback,
+            contentChanged: valueGeter
+        });
+        eventBinder();
+    }
 }
 
 function functionLoaderCheck(){
