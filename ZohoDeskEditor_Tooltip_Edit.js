@@ -52,7 +52,9 @@ function eventBinder() {
         var bc = e.srcElement.value;
         if (bc != "") {
             try {
-                tooltipBackgroundColourChanger(bc);
+                if(isNaN(bc)){
+                    tooltipBackgroundColourChanger(bc);
+                }
                 if (LastFocusedBC != document.getElementById("chromeAdd-onEditAddonButtonContainer").style.backgroundColor) {
                     lastSelectedColorOptionNode.style.borderColor = "";
                 }
