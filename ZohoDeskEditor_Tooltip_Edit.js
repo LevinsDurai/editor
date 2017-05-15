@@ -1,7 +1,6 @@
 var chrome_addons_inner_text = "";
 var lastSelectedColorOptionNode;
 var LastFocusedBC = "white";
-var zohoDeskLoadTimeing=1000;
 
 function callback(editorObj) {
     editor = editorObj
@@ -27,8 +26,6 @@ function loadPage(cssPath,jsPath) {
 
 function functionLoaderCheck(){
     if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
-        clearInterval(setIntervelVariable);
-        zohoDeskLoadTimeing=0;
         loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
     }
 }
