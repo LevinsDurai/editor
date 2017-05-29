@@ -6,13 +6,12 @@ function callback(editorObj) {
     editor = editorObj
 }
 
-
 function valueGeter() {
     chrome_addons_inner_text = editor.getContent()
     window.postMessage({ type:"Editter_InnerContent_Changed" , text:chrome_addons_inner_text },"*");
 }
 
-function loadPage(cssPath,jsPath) {
+function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
     if(document.getElementById("editerToolsContainer").childElementCount ===0){
         ZohoDeskEditor_Init.init(cssPath,jsPath);
         ZohoDeskEditor.create({
@@ -26,8 +25,8 @@ function loadPage(cssPath,jsPath) {
 }
 
 function functionLoaderCheck(){
-    if(ZohoDeskEditor_Init.Init && ZohoDeskEditor.create){
-        loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
+    if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
+        ZohoDesk_Editor_loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
     }
 }
 
