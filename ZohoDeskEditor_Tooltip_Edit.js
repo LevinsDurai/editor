@@ -14,7 +14,7 @@ function valueGeter() {
 
 function loadPage(cssPath,jsPath) {
     if(document.getElementById("editerToolsContainer").childElementCount ===0){
-        ZohoDeskEditor_Init.ToolTipInit(cssPath,jsPath);
+        ZohoDeskEditor_TooltipInit.init(cssPath,jsPath);
         ZohoDeskEditor.create({
             id: "editerToolsContainer",
             content: chrome_addons_inner_text,
