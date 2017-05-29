@@ -6,6 +6,7 @@ function callback(editorObj) {
     editor = editorObj
 }
 
+
 function valueGeter() {
     chrome_addons_inner_text = editor.getContent()
     window.postMessage({ type:"Editter_InnerContent_Changed" , text:chrome_addons_inner_text },"*");
