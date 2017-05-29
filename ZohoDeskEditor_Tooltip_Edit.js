@@ -26,7 +26,7 @@ function loadPage(cssPath,jsPath) {
 }
 
 function functionLoaderCheck(){
-    if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
+    if(ZohoDeskEditor_Init.ToolTipInit && ZohoDeskEditor.create){
         loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
     }
 }
