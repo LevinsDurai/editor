@@ -229,28 +229,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
     ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
     ZohoDeskEditor_Init.loading = true;
 };
-ZohoDeskEditor_Init.loadURL = function(URL, type ,id) {
-    var css,
-        _script,
-        _document = document;
 
-    if(id && _document.getElementById(id)){
-        return;
-    }
-    if (type === "css") {
-        css = _document.createElement("link");
-        css.type = 'text/css';
-        css.rel = 'stylesheet';
-        css.className="zohoDesk_toolTipEditor_css";
-        css.href = URL;
-        _document.getElementsByTagName("head")[0].appendChild(css);
-    } else if (type === "js") {
-        _script = _document.createElement("script");
-        _script.type = "text/javascript";
-        _script.src = URL;
-        _document.getElementsByTagName("head")[0].appendChild(_script);
-    }
-};
 
 //console.log("zohodesk_init file is loaded......");
 // global.ZohoDeskEditor_TooltipInit = ZohoDeskEditor_TooltipInit;
