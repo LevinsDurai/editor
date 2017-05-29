@@ -1,6 +1,6 @@
-function ZohoDeskEditor_TooltipInit() {}
+function ZohoDeskEditor_Init() {}
 
-ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csrfToken, hookToOrganize) {
+ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken, hookToOrganize) {
     ZohoDeskEditor_Init.language = "en";
     ZohoDeskEditor_Init.useSameDomain = true;
     ZohoDeskEditor_Init.needplaintext = true;
