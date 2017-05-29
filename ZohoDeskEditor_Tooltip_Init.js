@@ -1,40 +1,40 @@
 function ZohoDeskEditor_TooltipInit() {}
 
 ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csrfToken, hookToOrganize) {
-    ZohoDeskEditor_Init.language = "en";
-    ZohoDeskEditor_Init.useSameDomain = true;
-    ZohoDeskEditor_Init.needplaintext = true;
-    ZohoDeskEditor_Init.editorCSS = true;
-    ZohoDeskEditor_Init.inlineQuotes = true;
-    ZohoDeskEditor_Init.csrfCookieVal = csrfToken;
-    ZohoDeskEditor_Init.csrfParamVal = csrfParamName;
-    ZohoDeskEditor_Init.modeChange = undefined;
-    ZohoDeskEditor_Init.spellcheckURL = 'lt.zoho.com';
-    ZohoDeskEditor_Init.domain = document.domain;
-    ZohoDeskEditor_Init.tabKeyHandling = true;
-    ZohoDeskEditor_Init.needEditorFocus = true;
-    ZohoDeskEditor_Init.removeInsertOptions = false;
-    ZohoDeskEditor_Init.defaultFontSize = "10";
-    ZohoDeskEditor_Init.defaultFontFamily = "Verdana,arial,Helvetica,sans-serif";
-    ZohoDeskEditor_Init.contextVal = "support";
-    ZohoDeskEditor_Init.maxiconpath = 3;
-    ZohoDeskEditor_Init.dropDownTopPadding = 11;
-    ZohoDeskEditor_Init.dropDownLeftPadding = 5;
-    ZohoDeskEditor_Init.slidebarClass = "KB_Editor_DropDown_Slidebar";
-    ZohoDeskEditor_Init.origin = window.location.origin;
-    ZohoDeskEditor_Init.cssPath = cssPath;
-    ZohoDeskEditor_Init.jsPath = jsPath;
+    ZohoDeskEditor_TooltipInit.language = "en";
+    ZohoDeskEditor_TooltipInit.useSameDomain = true;
+    ZohoDeskEditor_TooltipInit.needplaintext = true;
+    ZohoDeskEditor_TooltipInit.editorCSS = true;
+    ZohoDeskEditor_TooltipInit.inlineQuotes = true;
+    ZohoDeskEditor_TooltipInit.csrfCookieVal = csrfToken;
+    ZohoDeskEditor_TooltipInit.csrfParamVal = csrfParamName;
+    ZohoDeskEditor_TooltipInit.modeChange = undefined;
+    ZohoDeskEditor_TooltipInit.spellcheckURL = 'lt.zoho.com';
+    ZohoDeskEditor_TooltipInit.domain = document.domain;
+    ZohoDeskEditor_TooltipInit.tabKeyHandling = true;
+    ZohoDeskEditor_TooltipInit.needEditorFocus = true;
+    ZohoDeskEditor_TooltipInit.removeInsertOptions = false;
+    ZohoDeskEditor_TooltipInit.defaultFontSize = "10";
+    ZohoDeskEditor_TooltipInit.defaultFontFamily = "Verdana,arial,Helvetica,sans-serif";
+    ZohoDeskEditor_TooltipInit.contextVal = "support";
+    ZohoDeskEditor_TooltipInit.maxiconpath = 3;
+    ZohoDeskEditor_TooltipInit.dropDownTopPadding = 11;
+    ZohoDeskEditor_TooltipInit.dropDownLeftPadding = 5;
+    ZohoDeskEditor_TooltipInit.slidebarClass = "KB_Editor_DropDown_Slidebar";
+    ZohoDeskEditor_TooltipInit.origin = window.location.origin;
+    ZohoDeskEditor_TooltipInit.cssPath = cssPath;
+    ZohoDeskEditor_TooltipInit.jsPath = jsPath;
     var agt = navigator.userAgent.toLowerCase();
-    ZohoDeskEditor_Init.is_ie = (agt.indexOf("ie") !== -1);
-    ZohoDeskEditor_Init.is_safari = (agt.indexOf("safari") !== -1);
-    ZohoDeskEditor_Init.is_opera = (agt.indexOf("opera") !== -1);
-    ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
-    ZohoDeskEditor_Init.loading = true;
+    ZohoDeskEditor_TooltipInit.is_ie = (agt.indexOf("ie") !== -1);
+    ZohoDeskEditor_TooltipInit.is_safari = (agt.indexOf("safari") !== -1);
+    ZohoDeskEditor_TooltipInit.is_opera = (agt.indexOf("opera") !== -1);
+    ZohoDeskEditor_TooltipInit.is_mac = (agt.indexOf("mac") !== -1);
+    ZohoDeskEditor_TooltipInit.loading = true;
     if(document.getElementsByClassName("zohoDesk_toolTipEditor_css").length===0){
-        ZohoDeskEditor_Init.loadURL(ZohoDeskEditor_Init.cssPath+"/ZohoDeskEditorTools.min.css", "css", "ZohoDeskCss");
+        ZohoDeskEditor_TooltipInit.loadURL(ZohoDeskEditor_TooltipInit.cssPath+"/ZohoDeskEditorTools.min.css", "css", "ZohoDeskCss");
     }
 
-    ZohoDeskEditor_Init.toolbarOrder = [
+    ZohoDeskEditor_TooltipInit.toolbarOrder = [
         ["bold", "Bold (Ctrl+B)", "KBEditor-txtbold"],
         ["italic", "Italic (Ctrl+I)", "KBEditor-txtitalic"],
         ["underline", "Underline (Ctrl+U)", "KBEditor-txtunderline"],
@@ -56,7 +56,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         /*["plaintext", "Plain Text", "KB_Editor_PlainText KB_Editor_FullScreen"]*/
     ];
 
-    ZohoDeskEditor_Init.heading = [{
+    ZohoDeskEditor_TooltipInit.heading = [{
             "htm": "Heading 1",
             "datAttr": "h1"
         },
@@ -73,7 +73,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
             "datAttr": "div"
         }
     ];
-    ZohoDeskEditor_Init.insertoptions = [{
+    ZohoDeskEditor_TooltipInit.insertoptions = [{
             "htm": "Insert Link",
             "datAttr": "link",
             "iconClass": "KBEditor-insertlink"
@@ -111,7 +111,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
           }
 	*/
     ];
-    ZohoDeskEditor_Init.align = [{
+    ZohoDeskEditor_TooltipInit.align = [{
             "htm": "Align Left",
             "datAttr": "justifyleft",
             "iconClass": "KBEditor-align-left"
@@ -137,7 +137,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
             "iconClass": "KBEditor-align-right"
         },
     ];
-    ZohoDeskEditor_Init.list = [{
+    ZohoDeskEditor_TooltipInit.list = [{
             "htm": "Bullets",
             "datAttr": "insertunorderedlist",
             "iconClass": "KBEditor-list-round"
@@ -149,7 +149,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         }
     ];
 
-    ZohoDeskEditor_Init.indent = [{
+    ZohoDeskEditor_TooltipInit.indent = [{
             "htm": "Increase Indent",
             "datAttr": "indent",
             "iconClass": "KBEditor-increaseindent"
@@ -161,7 +161,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         }
     ];
 
-    ZohoDeskEditor_Init.others = [{
+    ZohoDeskEditor_TooltipInit.others = [{
             "htm": "Check Spelling",
             "datAttr": "spellcheck"
         },
@@ -171,10 +171,10 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         }
     ];
 
-    ZohoDeskEditor_Init.attachDrop = [{
+    ZohoDeskEditor_TooltipInit.attachDrop = [{
             "clk": function(editor) {
                 editor.uploadImage("load");
-                if (ZohoDeskEditor_Init.needEditorStats) {
+                if (ZohoDeskEditor_TooltipInit.needEditorStats) {
                     editor.updateCount("image");
                 }
             },
@@ -184,7 +184,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         {
             "clk": function(editor) {
                 editor.uploadImage("url");
-                if (ZohoDeskEditor_Init.needEditorStats) {
+                if (ZohoDeskEditor_TooltipInit.needEditorStats) {
                     editor.updateCount("image");
                 }
             },
@@ -193,7 +193,7 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         }
     ];
 
-    ZohoDeskEditor_Init.fontSize = [{
+    ZohoDeskEditor_TooltipInit.fontSize = [{
             "htm": "8",
             "datAttr": "1"
         },
@@ -223,13 +223,13 @@ ZohoDeskEditor_TooltipInit.init = function( cssPath , jsPath ,csrfParamName, csr
         }
     ];
     var agt = navigator.userAgent.toLowerCase();
-    ZohoDeskEditor_Init.is_ie = (agt.indexOf("ie") !== -1);
-    ZohoDeskEditor_Init.is_safari = (agt.indexOf("safari") !== -1);
-    ZohoDeskEditor_Init.is_opera = (agt.indexOf("opera") !== -1);
-    ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
-    ZohoDeskEditor_Init.loading = true;
+    ZohoDeskEditor_TooltipInit.is_ie = (agt.indexOf("ie") !== -1);
+    ZohoDeskEditor_TooltipInit.is_safari = (agt.indexOf("safari") !== -1);
+    ZohoDeskEditor_TooltipInit.is_opera = (agt.indexOf("opera") !== -1);
+    ZohoDeskEditor_TooltipInit.is_mac = (agt.indexOf("mac") !== -1);
+    ZohoDeskEditor_TooltipInit.loading = true;
 };
-ZohoDeskEditor_Init.loadURL = function(URL, type ,id) {
+ZohoDeskEditor_TooltipInit.loadURL = function(URL, type ,id) {
     var css,
         _script,
         _document = document;
@@ -253,4 +253,4 @@ ZohoDeskEditor_Init.loadURL = function(URL, type ,id) {
 };
 
 //console.log("zohodesk_init file is loaded......");
-// global.ZohoDeskEditor_Init = ZohoDeskEditor_Init;
+// global.ZohoDeskEditor_TooltipInit = ZohoDeskEditor_TooltipInit;
