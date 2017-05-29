@@ -31,7 +31,7 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
     ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
     ZohoDeskEditor_Init.loading = true;
     if(document.getElementsByClassName("zohoDesk_toolTipEditor_css").length===0){
-        ZohoDeskEditor_Init.loadURL(ZohoDeskEditor_TooltipInit.cssPath+"/ZohoDeskEditorTools.min.css", "css", "ZohoDeskCss");
+        ZohoDeskEditor_Init.loadURL(ZohoDeskEditor_Init.cssPath+"/ZohoDeskEditorTools.min.css", "css", "ZohoDeskCss");
     }
 
     ZohoDeskEditor_Init.toolbarOrder = [
