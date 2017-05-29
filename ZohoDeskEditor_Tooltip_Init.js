@@ -1,7 +1,6 @@
+function ZohoDeskEditor_Init() {}
 
-function TooltipEditor_init() {}
-
-TooltipEditor_init.init = function( cssPath , jsPath ,csrfParamName, csrfToken, hookToOrganize) {
+ZohoDeskEditor_Init.ToolTipInit = function( cssPath , jsPath ,csrfParamName, csrfToken, hookToOrganize) {
     ZohoDeskEditor_Init.language = "en";
     ZohoDeskEditor_Init.useSameDomain = true;
     ZohoDeskEditor_Init.needplaintext = true;
@@ -253,5 +252,5 @@ ZohoDeskEditor_Init.loadURL = function(URL, type ,id) {
     }
 };
 
-console.log("zohodesk_init file is loaded......");
+//console.log("zohodesk_init file is loaded......");
 // global.ZohoDeskEditor_Init = ZohoDeskEditor_Init;
