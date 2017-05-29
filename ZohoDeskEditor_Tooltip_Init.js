@@ -30,6 +30,7 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
     ZohoDeskEditor_Init.is_opera = (agt.indexOf("opera") !== -1);
     ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
     ZohoDeskEditor_Init.loading = true;
+	ZohoDeskEditor_Init.changedTools = ["fontfamily"];
     if(document.getElementsByClassName("zohoDesk_toolTipEditor_css").length===0){
         ZohoDeskEditor_Init.loadURL(ZohoDeskEditor_Init.cssPath+"/ZohoDeskEditorTools.min.css", "css", "ZohoDeskCss");
     }
