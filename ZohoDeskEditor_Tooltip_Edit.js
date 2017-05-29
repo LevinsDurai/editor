@@ -14,7 +14,7 @@ function valueGeter() {
 
 function loadPage(cssPath,jsPath) {
     if(document.getElementById("editerToolsContainer").childElementCount ===0){
-        ZohoDeskEditor_TooltipInit.init(cssPath,jsPath);
+        ZohoDeskEditor_Init.init(cssPath,jsPath);
         ZohoDeskEditor.create({
             id: "editerToolsContainer",
             content: chrome_addons_inner_text,
@@ -26,7 +26,7 @@ function loadPage(cssPath,jsPath) {
 }
 
 function functionLoaderCheck(){
-    if(ZohoDeskEditor_Init.ToolTipInit && ZohoDeskEditor.create){
+    if(ZohoDeskEditor_Init.Init && ZohoDeskEditor.create){
         loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
     }
 }
