@@ -1,3 +1,4 @@
+var ZohoDeskEditor_Tooltip_EditorToolsList=["bold","italic","underline","forecolor","heading","fontSize","alignoptions","listoptions","insertoptions"];
 var chrome_addons_inner_text = "";
 var lastSelectedColorOptionNode;
 var LastFocusedBC = "white";
