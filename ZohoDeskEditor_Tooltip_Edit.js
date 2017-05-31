@@ -6,7 +6,6 @@ var LastFocusedBC = "white";
 function callback(editorObj) {
     var deleteIt=true;
 	editor = editorObj;
-	console.log(editor);
 	for(i in editor.toolbarobject){
 		for(j=0 ; j<ZohoDeskEditor_Tooltip_EditorToolsList.length ; j++){
 			if(i==ZohoDeskEditor_Tooltip_EditorToolsList[j]){
