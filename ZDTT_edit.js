@@ -1,5 +1,5 @@
 // var ZohoDeskEditor_Tooltip_EditorToolsList=["bold","italic","underline","forecolor","heading","fontSize","alignoptions","listoptions","insertoptions"];
-var ZohoDeskEditor_Tooltip_EditorToolsList=["bold","italic","underline","forecolor","fontSize","insertoptions","alignoptions"];
+var ZohoDeskEditor_Tooltip_EditorToolsList=["bold","italic","underline","forecolor","fontSize","alignoptions","insertoptions"];
 var chrome_addons_inner_text = "";
 var lastSelectedColorOptionNode;
 var LastFocusedBC = "white";
@@ -69,9 +69,9 @@ function eventBinder() {
             try {
                 if(isNaN(bc)){
                     tooltipBackgroundColourChanger(bc);
-                }
-                if (LastFocusedBC != document.getElementById("chromeAdd-onEditAddonButtonContainer").style.backgroundColor) {
-                    lastSelectedColorOptionNode.style.borderColor = "";
+                    if (LastFocusedBC != document.getElementsByClassName("KB_Editor_iframe")[0].contentDocument.body.style.backgroundColor) {
+                       lastSelectedColorOptionNode.style.borderColor = "";
+                    }
                 }
             } catch (error) {
                 console.log(error);
@@ -94,7 +94,7 @@ function separateColorHighliter(e) {
     }
     else{
         parentEle.style.borderColor = bc;
-    }
+    };
     if (lastSelectedColorOptionNode != null) {
         if (lastSelectedColorOptionNode != parentEle) {
             lastSelectedColorOptionNode.style.borderColor = "";
