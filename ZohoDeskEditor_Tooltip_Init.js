@@ -36,15 +36,15 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
     }
 
     ZohoDeskEditor_Init.toolbarOrder = [
-        ["bold", "Bold (Ctrl+B)", "KBEditor-txtbold"],
-        ["italic", "Italic (Ctrl+I)", "KBEditor-txtitalic"],
-        ["underline", "Underline (Ctrl+U)", "KBEditor-txtunderline"],
-        ["forecolor", "Font color", "KBEditor-clrpick"],
+        ["bold", "Bold (Ctrl+B)", "KBEditortools-txtbold"],
+        ["italic", "Italic (Ctrl+I)", "KBEditortools-txtitalic"],
+        ["underline", "Underline (Ctrl+U)", "KBEditortools-txtunderline"],
+        ["forecolor", "Font color", "KBEditortools-clrpick"],
         /*["backcolor", "Background Color", "KBEditor-bgclr"],*/
         ["heading", "Heading", "KB_Editor_Bdr_div Text_Type"],
         ["fontSize", "Font Size", "KB_Editor_Bdr_div TextSize_Type"],
-        ["alignoptions", "Align Text", "KBEditor-align-left"],
-        ["listoptions", "List Options", "KBEditor-list-round"],
+        ["alignoptions", "Align Text", "KBEditortools-align-left"],
+        ["listoptions", "List Options", "KBEditortools-list-round"],
         
         /*["indentoptions", "Indent Options", "KBEditor-increaseindent"],
         ["attach", "Insert Image", "KBEditor-insertimage"],
