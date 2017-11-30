@@ -39,7 +39,7 @@ function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
 
 function functionLoaderCheck(){
     if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
-        ZohoDesk_Editor_loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
+        ZohoDesk_Editor_loadPage('https://localcss.zohostatic.com/support/1347659/css','https://localjs.zohostatic.com/support/1316166');
     }
 }
 
