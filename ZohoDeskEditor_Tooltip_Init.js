@@ -44,7 +44,7 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
         ["heading", "Heading", "KB_Editor_Bdr_div Text_Type"],
         ["fontSize", "Font Size", "KB_Editor_Bdr_div TextSize_Type"],
         ["alignoptions", "Align Text", "KBEditortools-align-left"],
-        ["listoptions", "List Options", "KBEditortools-list-round"],
+//         ["listoptions", "List Options", "KBEditortools-list-round"],
         
         /*["indentoptions", "Indent Options", "KBEditor-increaseindent"],
         ["attach", "Insert Image", "KBEditor-insertimage"],
