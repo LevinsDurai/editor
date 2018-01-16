@@ -41,7 +41,7 @@ function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
 
 function functionLoaderCheck(){
     if(ZohoDeskEditor_Init.init && ZohoDeskEditor.create){
-        ZohoDesk_Editor_loadPage('https://css.zohostatic.com/support/zde_v2/css','https://js.zohostatic.com/support/zde_v2');
+        ZohoDesk_Editor_loadPage('https://css.zohostatic.com/support/1316166/css','https://js.zohostatic.com/support/1316166'); // old version is => zde_v2 
     }
 }
 
