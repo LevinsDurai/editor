@@ -37,7 +37,7 @@ function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
 			    callback: callback,
 			    contentChanged: valueGeter
 			});
-			eventBinder();
+			//eventBinder();
 		    }	   
 	}
 	else{
