@@ -30,7 +30,7 @@ function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
     if(document.getElementById("editerToolsContainer").childElementCount ===0){
         ZohoDeskEditor_Init.init(cssPath,jsPath);
         ZohoDeskEditor.create({
-            id: "editerToolsContainer",
+            element: document.getElementById("zdtt_sidePanelHost").shadowRoot.querySelector("#editerToolsContainer") ,
             content: chrome_addons_inner_text,
             callback: callback,
             contentChanged: valueGeter
