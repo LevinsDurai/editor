@@ -238,7 +238,7 @@ ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
         _document = zdttRootElem ? zdttRootElem.shadowRoot : document;
 
-    if(id && _document.getElementById(id)){
+    if(id && document.getElementById(id)){
 
     return;
 
@@ -246,7 +246,7 @@ ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
     if (type === "css") {
 
-        css = _document.createElement("link");
+        css = document.createElement("link");
 
         css.type = 'text/css';
 
@@ -260,7 +260,7 @@ ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
     } else if (type === "js") {
 
-        _script = _document.createElement("script");
+        _script = document.createElement("script");
 
         _script.type = "text/javascript";
 
