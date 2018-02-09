@@ -230,9 +230,8 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
     ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
     ZohoDeskEditor_Init.loading = true;
 };
-var zdttRootElem = document.getElementById("zdtt_sidePanelHost");
 ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
-
+	var zdttRootElem = document.getElementById("zdtt_sidePanelHost");
     var css,
 
         _script,
