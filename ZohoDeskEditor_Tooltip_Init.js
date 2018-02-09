@@ -230,13 +230,14 @@ ZohoDeskEditor_Init.init = function( cssPath , jsPath ,csrfParamName, csrfToken,
     ZohoDeskEditor_Init.is_mac = (agt.indexOf("mac") !== -1);
     ZohoDeskEditor_Init.loading = true;
 };
+var zdttRootElem = document.getElementById("zdtt_sidePanelHost");
 ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
     var css,
 
         _script,
 
-        _document = document;
+        _document = zdttRootElem ? zdttRootElem.shadowRoot : document;
 
     if(id && _document.getElementById(id)){
 
@@ -256,7 +257,7 @@ ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
         css.setAttribute("id",id);
 
-        _document.getElementsByTagName("head")[0].appendChild(css);
+        _document.appendChild(css);
 
     } else if (type === "js") {
 
@@ -268,7 +269,7 @@ ZohoDeskEditor_Init.loadURL = function(URL, type, id) {
 
         _script.setAttribute("id",id);
 
-        _document.getElementsByTagName("head")[0].appendChild(_script);
+        _document.appendChild(_script);
 
     }
 
