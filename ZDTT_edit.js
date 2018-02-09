@@ -27,16 +27,22 @@ function valueGeter() {
 }
 
 function ZohoDesk_Editor_loadPage(cssPath,jsPath) {
-    if(document.getElementById("editerToolsContainer").childElementCount ===0){
-        ZohoDeskEditor_Init.init(cssPath,jsPath);
-        ZohoDeskEditor.create({
-            element: document.getElementById("zdtt_sidePanelHost").shadowRoot.querySelector("#editerToolsContainer") ,
-            content: chrome_addons_inner_text,
-            callback: callback,
-            contentChanged: valueGeter
-        });
-        eventBinder();
-    }
+	var editerParentElem =document.getElementById("zdtt_sidePanelHost").shadowRoot.querySelector("#editerToolsContainer")
+	if(editerParentElem){
+		if(editerParentElem.childElementCount ===0){
+			ZohoDeskEditor_Init.init(cssPath,jsPath);
+			ZohoDeskEditor.create({
+			    element: editerParentElem ,
+			    content: chrome_addons_inner_text,
+			    callback: callback,
+			    contentChanged: valueGeter
+			});
+			eventBinder();
+		    }	   
+	}
+	else{
+		console.log("editor parent element is not founded...")
+	}
 }
 
 function functionLoaderCheck(){
